@@ -3,12 +3,11 @@
   "WorkspaceRootPath": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\auth_users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:final_project\\router\\auth_users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\nodejs_PracticeProject_AuthUserMgmt\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\general.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:final_project\\router\\general.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\auth_users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:final_project\\router\\auth_users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\booksdb.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -19,7 +18,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:final_project\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\nodejs_PracticeProject_AuthUserMgmt\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\general.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:final_project\\router\\general.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\nodejs_PracticeProject_AuthUserMgmt\\router\\friends.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
@@ -35,19 +35,6 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "friends.js",
-              "DocumentMoniker": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\nodejs_PracticeProject_AuthUserMgmt\\router\\friends.js",
-              "RelativeDocumentMoniker": "..\\nodejs_PracticeProject_AuthUserMgmt\\router\\friends.js",
-              "ToolTip": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\nodejs_PracticeProject_AuthUserMgmt\\router\\friends.js",
-              "RelativeToolTip": "..\\nodejs_PracticeProject_AuthUserMgmt\\router\\friends.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-02-29T04:36:37.1Z",
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
@@ -57,13 +44,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "friends.js",
+              "DocumentMoniker": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\nodejs_PracticeProject_AuthUserMgmt\\router\\friends.js",
+              "RelativeDocumentMoniker": "..\\nodejs_PracticeProject_AuthUserMgmt\\router\\friends.js",
+              "ToolTip": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\nodejs_PracticeProject_AuthUserMgmt\\router\\friends.js",
+              "RelativeToolTip": "..\\nodejs_PracticeProject_AuthUserMgmt\\router\\friends.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-02-29T04:36:37.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "index.js",
               "DocumentMoniker": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\nodejs_PracticeProject_AuthUserMgmt\\index.js",
               "RelativeDocumentMoniker": "..\\nodejs_PracticeProject_AuthUserMgmt\\index.js",
               "ToolTip": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\nodejs_PracticeProject_AuthUserMgmt\\index.js",
               "RelativeToolTip": "..\\nodejs_PracticeProject_AuthUserMgmt\\index.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAwAgAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-03-01T07:47:26.182Z",
               "EditorCaption": ""
@@ -72,20 +71,20 @@
         },
         {
           "DockedWidth": 405,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "auth_users.js",
-              "DocumentMoniker": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\auth_users.js",
-              "RelativeDocumentMoniker": "final_project\\router\\auth_users.js",
-              "ToolTip": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\auth_users.js",
-              "RelativeToolTip": "final_project\\router\\auth_users.js",
+              "DocumentIndex": 3,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\index.js",
+              "RelativeDocumentMoniker": "final_project\\index.js",
+              "ToolTip": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\index.js",
+              "RelativeToolTip": "final_project\\index.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-03-02T09:41:17.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-29T04:10:28.758Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -98,33 +97,33 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-03-01T04:20:59.152Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "index.js",
-              "DocumentMoniker": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\index.js",
-              "RelativeDocumentMoniker": "final_project\\index.js",
-              "ToolTip": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\index.js",
-              "RelativeToolTip": "final_project\\index.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-02-29T04:10:28.758Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "auth_users.js",
+              "DocumentMoniker": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\auth_users.js",
+              "RelativeDocumentMoniker": "final_project\\router\\auth_users.js",
+              "ToolTip": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\auth_users.js",
+              "RelativeToolTip": "final_project\\router\\auth_users.js",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-02T09:41:17.386Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "general.js",
               "DocumentMoniker": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\general.js",
               "RelativeDocumentMoniker": "final_project\\router\\general.js",
               "ToolTip": "C:\\IBM Full Stack\\5. Developing Back-End Apps with Node.js and Express\\4. Final Project\\expressBookReviews\\final_project\\router\\general.js",
               "RelativeToolTip": "final_project\\router\\general.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-02-29T04:10:50.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-29T04:10:50.525Z"
             }
           ]
         }
