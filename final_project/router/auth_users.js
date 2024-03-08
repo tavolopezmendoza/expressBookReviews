@@ -50,6 +50,14 @@ regd_users.post("/login", (req, res) => {
 
 // Add a book review
 regd_users.put("/auth/review/:isbn", (req, res) => {
+    const isbn = req.params.isbn;
+    const review = req.body.review;
+    const username = req.session.username;
+
+    let bookList = Object.values(books)
+    if (accessToken) {
+        books[isb].review = review;
+    }
   //Write your code here
   return res.status(300).json({message: "Yet to be implemented"});
 });
