@@ -19,16 +19,32 @@ public_users.post("/register", (req,res) => {
     return res.status(404).json({message: "Unable to register user."})
 });
 
-// Get the book list available in the shop
+
+/*/ Get the book list available in the shop normal
 public_users.get('/', function (req, res) {
     res.send(JSON.stringify(books));
+});*/
+
+// Get the book list available in the shop with promise
+public_users.get('/', function (req, res) {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => resolve(books), 500)
+    });
+    promise.then((result) => {
+        //Asi se ve mejor
+        return res.status(200).json({ books: result });
+        //Asi se ve toda la informacion en una linea
+        //return res.send(JSON.stringify(books));
+    });
 });
 
-// Get book details based on ISBN
-public_users.get('/isbn/:isbn', function (req, res) {
+// Get book details based on ISBN normal way
+/*public_users.get('/isbn/:isbn', function (req, res) {
     const isbn = req.params.isbn;
     res.send(books[isbn]);
-});
+});*/
+
+// Get book details based on ISBN with promise
   
 // Get book details based on author
 public_users.get('/author/:author', function (req, res) {
