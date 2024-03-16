@@ -27,7 +27,7 @@ public_users.get('/', function (req, res) {
 
 // Get the book list available in the shop with promise
 public_users.get('/', function (req, res) {
-    const promise = new Promise((resolve, reject) => {
+    let promise = new Promise((resolve, reject) => {
         setTimeout(() => resolve(books), 500)
     });
     promise.then((result) => {
@@ -45,14 +45,40 @@ public_users.get('/', function (req, res) {
 });*/
 
 // Get book details based on ISBN with promise
+public_users.get("/isbn/:isbn", function (req, res) {
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => resolve(books[req.params.isbn]), 1000);
+    });
+    const book = await promise;
+
+    if (book) {
+        return res.status(200).json({ book });
+    } else {
+        return res.status(404).json({ message: "Book not found" });
+    }
+});
   
-// Get book details based on author
-public_users.get('/author/:author', function (req, res) {
+// Get book details based on author normal
+/*public_users.get('/author/:author', function (req, res) {
     const author = req.params.author;
     const bookAuthor = Object.values(books);
     const book = bookAuthor.filter((book) => book.author === author);
     res.status(200).json(book);
+});*/
+//Get book details based on author with promise
+public_users.get('/author/:author', function (req, res) {
+    const author = req.params.author;
+    const bookAuthor = Object.values(books);
+    const bookPromise = new Promise((resolve, reject) => {
+        const book = bookAuthor.filter((book) => book.author === author);
+        if (bookAuthor) {
+            resolve(res.status(200).json(book));
+        } else {
+            reject(res.status(404).json(`No book found for the author ${author}`));
+        }
+    });
 });
+    
 
 // Get all books based on title
 public_users.get('/title/:title',function (req, res) {
