@@ -27,14 +27,18 @@ public_users.get('/', function (req, res) {
 
 // Get the book list available in the shop with promise
 public_users.get('/', function (req, res) {
-    let promise = new Promise((resolve, reject) => {
-        setTimeout(() => resolve(books), 500)
+    const promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(JSON.stringify(books));
+        }, 500);
     });
     promise.then((result) => {
         //Asi se ve mejor
         return res.status(200).json({ books: result });
         //Asi se ve toda la informacion en una linea
         //return res.send(JSON.stringify(books));
+    }).catch((error) => {
+        return res.status(500).json({ message: "The book list was not found." });
     });
 });
 
@@ -46,16 +50,23 @@ public_users.get('/', function (req, res) {
 
 // Get book details based on ISBN with promise
 public_users.get("/isbn/:isbn", function (req, res) {
-    const promise = new Promise((resolve, reject) => {
-        setTimeout(() => resolve(books[req.params.isbn]), 1000);
+    const isbn = req.params.isbn;
+    const promiseISBN = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const isbnBook = books[isbn];
+            if (isbnBook) {
+                resolve(isbnBook);
+            } else {
+                reject({ message: "Book not found." });
+            }
+        }, 500);
     });
-    const book = await promise;
 
-    if (book) {
-        return res.status(200).json({ book });
-    } else {
-        return res.status(404).json({ message: "Book not found" });
-    }
+    promiseISBN.then((result) => {
+        return res.status(200).json(result);
+    }).catch((error) => {
+        return res.status(404).json(error);
+    });
 });
   
 // Get book details based on author normal
@@ -68,25 +79,55 @@ public_users.get("/isbn/:isbn", function (req, res) {
 //Get book details based on author with promise
 public_users.get('/author/:author', function (req, res) {
     const author = req.params.author;
-    const bookAuthor = Object.values(books);
-    const bookPromise = new Promise((resolve, reject) => {
-        const book = bookAuthor.filter((book) => book.author === author);
-        if (bookAuthor) {
-            resolve(res.status(200).json(book));
-        } else {
-            reject(res.status(404).json(`No book found for the author ${author}`));
-        }
+    const promiseAuthor = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const bookAuthor = Object.values(books).filter((book) => book.author === author);
+            if (bookAuthor.length > 0) {
+                resolve(bookAuthor);
+            } else {
+                reject({ message: "Book not found for the requested author" });
+            }
+        }, 500);
+    });
+    promiseAuthor.then((result) => {
+        return res.status(200).json({ "bookAuthor:": books});
+    }).catch((error) => {
+        return res.status(404).json(error);
     });
 });
     
 
 // Get all books based on title
-public_users.get('/title/:title',function (req, res) {
+/*public_users.get('/title/:title',function (req, res) {
     const title = req.params.titler;
     const bookTitle = Object.values(books);
     const book = bookTitle.filter((book) => book.title === title);
     res.status(200).json(book);
+});*/
+
+//Get all books based on title with promise
+public_users.get('/title/:title', function (req, res) {
+    const title = req.params.titler;
+    const promiseTitle = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const bookTitle = Object.values(books).filter((book) => book.title === title);
+            if (bookTitle.length > 0) {
+                resolve(bookTitle);
+            } else {
+                reject({ message: "Book not found for the requested title" });
+            }
+        }, 500);
+
+    });
+
+    promiseTitle.then((result) => {
+        return res.status(200).json(result);
+    }).catch((error) => {
+        return res.status(404).json(error);
+    });
 });
+    
+
 
 //  Get book review
 public_users.get('/review/:isbn',function (req, res) {
