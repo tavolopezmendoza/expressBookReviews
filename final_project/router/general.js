@@ -34,7 +34,7 @@ public_users.get('/', function (req, res) {
     });
     promise.then((result) => {
         //Asi se ve mejor
-        return res.status(200).json({ books: result });
+        return res.status(200).json(books);
         //Asi se ve toda la informacion en una linea
         //return res.send(JSON.stringify(books));
     }).catch((error) => {
@@ -90,7 +90,7 @@ public_users.get('/author/:author', function (req, res) {
         }, 500);
     });
     promiseAuthor.then((result) => {
-        return res.status(200).json({ "bookAuthor:": books});
+        return res.status(200).json(result);
     }).catch((error) => {
         return res.status(404).json(error);
     });
@@ -107,7 +107,7 @@ public_users.get('/author/:author', function (req, res) {
 
 //Get all books based on title with promise
 public_users.get('/title/:title', function (req, res) {
-    const title = req.params.titler;
+    const title = req.params.title;
     const promiseTitle = new Promise((resolve, reject) => {
         setTimeout(() => {
             const bookTitle = Object.values(books).filter((book) => book.title === title);
